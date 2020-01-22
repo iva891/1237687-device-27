@@ -1,6 +1,6 @@
 # Личный проект «Девайс»
 
-* Студент: [Константин Иващенко](https://up.htmlacademy.ru/htmlcss/27/user/1237687).
+* Студент: [Константин Иващенко](https://htmlacademy.ru/profile/id1237687).
 * Наставник: [Артём Рудов](https://htmlacademy.ru/profile/artrudov).
 
 ---
