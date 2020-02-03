@@ -19,7 +19,7 @@
         </li>
         <li>
            <button type="button">Выйти</button>
-         </li>
+        </li>
       </ul>
       <div>
         <a href="#">Сравнить</a>
@@ -54,54 +54,70 @@
             <li><a href="#">Моноподы для селфи</a></li>
         </ul>
 
-        <section>
           <h2>Сортировка:</h2>
           <p>
-            <a href="">По цене</a>
+            <a href="№">По цене</a>
           </p>
           <p>
-            <a href="">По типу</a>
+            <a href="№">По типу</a>
           </p>
           <p>
-            <a href="">По популярности</a>
+            <a href="№">По популярности</a>
           </p>
           <p>
-            <a href=""><span class="visually-hidden">По возрастанию</span></a>
+            <a href="№"><span class="visually-hidden">По возрастанию</span></a>
           </p>
           <p>
-            <a href=""><span class="visually-hidden">По убыванию</span></a>
+            <a href="№"><span class="visually-hidden">По убыванию</span></a>
           </p>
-        </section>
 
         <section>
           <h2>Фильтр:</h2>
-          <form action="" method="get">
-            <fieldset>
-              <legend>Стоимость</legend>
-              <label for="price" class="visually-hidden">Стоимость</label>
+          <form action="https://echo.htmlacademy.ru" method="get">
+
+              <p>Стоимость</p>
+              <label for="price">Стоимость</label>
               <input type="range" id="price" name="price" min="0" max="10000" value="5000">
               <p>От 0</p>
               <p>До 5000</p>
+
+            <fieldset>
+              <p>Цвет</p>
+              <ul>
+                <li>
+                  <input type="checkbox" id="black" name="black"checked>
+                  <label for="black">Черный</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="white" name="white">
+                  <label for="white">Белый</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="blue" name="blue"checked>
+                  <label for="blue">Синий</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="red" name="red"checked>
+                  <label for="red">Красный</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="pink" name="pink">
+                  <label for="pink">Розовый</label>
+                </li>  
+               </ul>
             </fieldset>
             <fieldset>
-              <legend>Цвет</legend>
-              <label for="black">Черный</label>
-              <input type="checkbox" id="black" name="black"checked>
-              <label for="white">Белый</label>
-              <input type="checkbox" id="white" name="white">
-              <label for="blue">Синий</label>
-              <input type="checkbox" id="blue" name="blue"checked>
-              <label for="red">Красный</label>
-              <input type="checkbox" id="red" name="red"checked>
-              <label for="pink">Розовый</label>
-              <input type="checkbox" id="pink" name="pink">
-            </fieldset>
-            <fieldset>
-              <legend>Bluetooth</legend>
-              <label for="with-bluetooth">Есть</label>
-              <input type="radio" id="with-bluetooth" name="bluetooth" value="with-bluetooth" checked>
-              <label for="without-bluetooth">Нет</label>
-              <input type="radio" id="without-bluetooth" name="bluetooth" value="without-bluetooth">
+              <p>Bluetooth</p>
+              <ul>
+                <li>
+                  <input type="radio" id="with-bluetooth" name="bluetooth" value="with-bluetooth" checked>
+                  <label for="with-bluetooth">Есть</label>
+                </li>
+                <li>
+                  <input type="radio" id="without-bluetooth" name="bluetooth" value="without-bluetooth">
+                  <label for="without-bluetooth">Нет</label>
+                </li>
+              </ul>
             </fieldset>
             <button type="submit">Показать</button>
           </form>
@@ -174,11 +190,11 @@
 
         <section>
           <p>Назад</p>
-          <ol>
+          <ul>
             <li><a href="#">1</a></li>
             <li><a href="#">2</a></li>
             <li><a href="#">3</a></li>
-          </ol>
+          </ul>
           <p>Вперед</p>
         </section>
 
@@ -223,7 +239,7 @@
         </ul>
 
       <div>
-      <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy" width="27" height="35" alt="Разработано в Htmlacademy"></a>
+        <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy" width="27" height="35" alt="Разработано в Htmlacademy"></a>
       </div>
 
     </footer>
