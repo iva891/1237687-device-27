@@ -39,10 +39,10 @@
 
     <nav class="main-navigation">
       <ul class="main-navigation-visual">
-        <li class="main-navigation-visual-item-1"><a href="#">Каталог товаров</a>
+        <li class="main-navigation-visual-item-1"><a href="catalog.html">Каталог товаров</a>
           <ul class="main-navigation-popup">
             <li><a href="#">Виртуальная реальность</a></li>
-            <li><a href="catalog.html">Моноподы для селфи</a></li>
+            <li><a href="#">Моноподы для селфи</a></li>
             <li><a href="#">Экшн-камеры</a></li>
             <li><a href="#">Фитнес-браслеты</a></li>
             <li><a href="#">Умные часы</a></li>
@@ -58,7 +58,7 @@
   </header>
 
   <main>
-    <section>
+    <section class="index-page-slider">
       <input type="radio" class="radio-slider-toggle-1 visually-hidden" id="slider-1" name="sliders" checked>
       <input type="radio" class="radio-slider-toggle-2 visually-hidden" id="slider-2" name="sliders">
       <input type="radio" class="radio-slider-toggle-3 visually-hidden" id="slider-3" name="sliders">
@@ -82,8 +82,8 @@
               Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
           </div>
           <div class="slider-section">
-            <div class="link">
-              <a href="#">Подробнее</a>
+            <div>
+              <a href="#" class="link">Подробнее</a>
             </div>
             <ul class="slider-switch">
               <li><label for="slider-1" class="label-slider-checked"></label></li>
@@ -126,8 +126,8 @@
               не пропускать занятия и соблюдать диету.</p>
           </div>
           <div class="slider-section">
-            <div class="link">
-              <a href="#">Подробнее</a>
+            <div>
+              <a href="#" class="link">Подробнее</a>
             </div>
             <ul class="slider-switch">
               <li><label for="slider-1" class="label-slider"></label></li>
@@ -166,8 +166,8 @@
               мощным лазером, замаскированным под стандартную камеру.</p>
           </div>
           <div class="slider-section">
-            <div class="link">
-              <a href="#">Подробнее</a>
+            <div>
+              <a href="#" class="link">Подробнее</a>
             </div>
             <ul class="slider-switch">
               <li><label for="slider-1" class="label-slider"></label></li>
@@ -190,7 +190,7 @@
       </div>
     </section>
 
-    <section>
+    <section class="index-page-list-product">
       <ul class="list-product">
         <li><a href="#" class="list-product-item-1">Виртуальная реальность</a></li>
         <li><a href="#" class="list-product-item-2">Моноподы для&nbsp;селфи</a></li>
@@ -232,7 +232,7 @@
       </div>
     </section>
 
-    <section>
+    <section class="indexpage-vendors">
       <ul class="vendors">
         <li class="vendors-logo-1"><span class="visually-hidden">DJI</span></li>
         <li class="vendors-logo-2"><span class="visually-hidden">SP Gadgets</span></li>
@@ -254,8 +254,8 @@
           <li>Автотрейдинг</li>
           <li>ЖелДорЭкспедиция</li>
         </ul>
-        <div class="link">
-          <a href="#">Подробнее о нас</a>
+        <div>
+          <a href="#" class="link">Подробнее о нас</a>
         </div>
       </section>
 
@@ -266,32 +266,14 @@
         <p class="main-text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить
           работоспособность покупки. Всякое бывает.</p>
         <div>
-          <img src="img/map.png" width="560" height="222" alt="Карта">
+          <a class="open-map"><img src="img/map.png" width="560" height="222" alt="Карта"></a>
         </div>
-        <div class="link">
-          <a href="#">Напишите нам</a>
+        <div class="contacts-write">
+          <a href="#" class="link modal-write">Напишите нам</a>
         </div>
       </section>
     </div>
 
-    <section class="feedback-form">
-      <h2 class="visually-hidden">Форма обратной связи</h2>
-      <form action="https://echo.htmlacademy.ru" method="post">
-        <p>
-          <input id="username" type="text" name="username" placeholder="Имя Фамилия">
-          <label for="username">Ваше имя:</label>
-        </p>
-        <p>
-          <input id="usermail" type="email" name="usermail" placeholder="email@example.com" required>
-          <label for="usermail">Ваш e-mail:</label>
-        </p>
-        <p>
-          <textarea id="usermessage" name="usermessage" rows="3" placeholder="В свободной форме"></textarea>
-          <label for="usermessage">Текст письма:</label>
-        </p>
-        <button type="submit" class="link">Отправить</button>
-      </form>
-    </section>
 
   </main>
 
@@ -356,5 +338,37 @@
       </div>
     </div>
   </footer>
+
+  <section class="modal feedback-form">
+    <h2 class="visually-hidden">Форма обратной связи</h2>
+    <form action="https://echo.htmlacademy.ru" method="post" class="feedback-form-places">
+      <p class="feedback-form-name">
+        <input id="username" type="text" name="username" placeholder="Имя Фамилия" class="feedback-form-field">
+        <label for="username">Ваше имя:</label>
+      </p>
+      <p class="feedback-form-mail">
+        <input id="usermail" type="email" name="usermail" placeholder="email@example.com" class="feedback-form-field">
+        <label for="usermail">Ваш e-mail:</label>
+      </p>
+      <p class="feedback-form-text">
+        <textarea id="usermessage" name="usermessage" rows="8" cols="106" placeholder="В свободной форме" class="feedback-form-field"></textarea>
+        <label for="usermessage">Текст письма:</label>
+      </p>
+      <button type="submit" class="link">Отправить</button>
+      <button type="button" class="feedback-form-exit"><span class="visually-hidden">Закрыть</span></button>
+
+    </form>
+  </section>
+  <section class="modal modal-map">
+    <h2 class="visually-hidden">Как до нас добраться</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488779976!2d37.52742931592807!3d55.687030980535816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1584361370057!5m2!1sru!2sru" width="960" height="559" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    <p><img src="img/map-big-jpg.jpg" width="960" height="559" alt="Офис компании по адресу г. Москва, ул. Строителей, 15"></p>
+    <button type="button" class="feedback-form-exit">
+    <span class="visually-hidden">Закрыть</span></button>
+  </section>
+
+  <script src="js/popup.js"></script>
+  <script src="js/map.js"></script>
+
 </body>
 </html>
