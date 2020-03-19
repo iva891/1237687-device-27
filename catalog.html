@@ -104,15 +104,15 @@
             <legend class="catalog-subtitle">Стоимость</legend>
             <div class="catalog-price-filter">
               <div class="price-filter-range">
+                <p class="price-filter-text">от</p>
+                <input name="min-price" type="number" class="input-left price-filter-price" placeholder="строка" value="0">
+                <p class="price-filter-text">до</p>
+                <input name="max-price" type="number" class="input-right price-filter-price" value="5000">
                 <div class="price-filter-scale">
                   <div class="price-filter-scale-bar"></div>
                 </div>
                 <div class="price-filter-toggle toggle-left"></div>
                 <div class="price-filter-toggle toggle-right"></div>
-              </div>
-              <div class="price-filter-place">
-                <label class="price-filter-price">от <input name="min-price" type="number" value="0"></label>
-                <label class="price-filter-price">до <input name="max-price" type="number" value="5000"></label>
               </div>
             </div>
           </fieldset>
@@ -121,23 +121,23 @@
             <legend class="catalog-subtitle">Цвет</legend>
             <ul>
               <li>
-                <input type="checkbox" id="black" name="black" class="catalog-filter-checkbox" checked>
+                <input type="checkbox" id="black" name="black" class="visually-hidden catalog-filter-checkbox" checked>
                 <label for="black" class="catalog-product-filter-item">Черный</label>
               </li>
               <li>
-                <input type="checkbox" id="white" name="white" class="catalog-filter-checkbox">
+                <input type="checkbox" id="white" name="white" class="visually-hidden catalog-filter-checkbox">
                 <label for="white" class="catalog-product-filter-item">Белый</label>
               </li>
               <li>
-                <input type="checkbox" id="blue" name="blue" class="catalog-filter-checkbox" checked>
+                <input type="checkbox" id="blue" name="blue" class="visually-hidden catalog-filter-checkbox" checked>
                 <label for="blue" class="catalog-product-filter-item">Синий</label>
               </li>
               <li>
-                <input type="checkbox" id="red" name="red" class="catalog-filter-checkbox" checked>
+                <input type="checkbox" id="red" name="red" class="visually-hidden catalog-filter-checkbox" checked>
                 <label for="red" class="catalog-product-filter-item">Красный</label>
               </li>
               <li>
-                <input type="checkbox" id="pink" name="pink" class="catalog-filter-checkbox">
+                <input type="checkbox" id="pink" name="pink" class="visually-hidden catalog-filter-checkbox">
                 <label for="pink" class="catalog-product-filter-item">Розовый</label>
               </li>
             </ul>
@@ -148,12 +148,12 @@
             <ul>
               <li>
                 <input type="radio" id="with-bluetooth" name="bluetooth" value="with-bluetooth"
-                  class="catalog-filter-radio" checked>
+                  class="visually-hidden catalog-filter-radio" checked>
                 <label for="with-bluetooth" class="catalog-product-filter-item-radio">Есть</label>
               </li>
               <li>
                 <input type="radio" id="without-bluetooth" name="bluetooth" value="without-bluetooth"
-                  class="catalog-filter-radio">
+                  class="visually-hidden catalog-filter-radio">
                 <label for="without-bluetooth" class="catalog-product-filter-item-radio">Нет</label>
               </li>
             </ul>
@@ -190,14 +190,14 @@
                 </div>
               </div>
               <p class="catalog-product-price">
-                500 руб
+                500 руб.
               </p>
             </li>
 
             <li class="catalog-product-item">
               <h3 class="catalog-subtitle">
                 <a href="#">
-                  Профессиональная селфи-палка
+                  Профессиональная селфи&#8209;палка
                 </a>
               </h3>
               <div class="catalog-product-image">
@@ -214,7 +214,7 @@
                 </div>
               </div>
               <p class="catalog-product-price">
-                1500 руб
+                1 500 руб.
               </p>
             </li>
 
@@ -238,7 +238,7 @@
                 </div>
               </div>
               <p class="catalog-product-price">
-                2500 руб
+                2 500 руб.
               </p>
             </li>
 
@@ -262,7 +262,7 @@
                 </div>
               </div>
               <p class="catalog-product-price">
-                4900 руб
+                4 900 руб.
               </p>
             </li>
 
